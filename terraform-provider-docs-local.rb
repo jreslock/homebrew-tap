@@ -5,21 +5,21 @@
 class TerraformProviderDocsLocal < Formula
   desc "A tool for managing and browsing local copies of Terraform provider documentation"
   homepage "https://github.com/jreslock/terraform-provider-docs-local"
-  version "0.0.17"
+  version "0.0.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.17/terraform-provider-docs-local_ darwin_x86_64.tar.gz"
-      sha256 "8d69482af388636680335af7d7bbf75822e68b4bc4578a945ff77b5b101c6ad3"
+      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.18/terraform-provider-docs-local_darwin_x86_64.tar.gz"
+      sha256 "7e322beeb8eba24af1e95bdebacb27e7e981bbedb08a74de8c7c5b41bdb069f8"
 
       def install
         bin.install "terraform-provider-docs-local-darwin-#{Hardware::CPU.arch}" => "terraform-provider-docs-local"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.17/terraform-provider-docs-local_ darwin_arm64.tar.gz"
-      sha256 "ace0938759c3d2cad6b87a8085290974866b3cc7f1f3ce9fdf814df563a537b8"
+      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.18/terraform-provider-docs-local_darwin_arm64.tar.gz"
+      sha256 "592f8437bf0e3ec78988178d9816eaf92e226113e014fe1a081b03f3e6509880"
 
       def install
         bin.install "terraform-provider-docs-local-darwin-#{Hardware::CPU.arch}" => "terraform-provider-docs-local"
@@ -30,8 +30,8 @@ class TerraformProviderDocsLocal < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.17/terraform-provider-docs-local_ linux_x86_64.tar.gz"
-        sha256 "a022a704e876a075743edef1347db117e190950b44030b94afb2ae0a33442287"
+        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.18/terraform-provider-docs-local_linux_x86_64.tar.gz"
+        sha256 "1ce605b8c9e1766a18bc619da050f364dba16a6e7bacf26321a01f975250dd01"
 
         def install
           bin.install "terraform-provider-docs-local-darwin-#{Hardware::CPU.arch}" => "terraform-provider-docs-local"
@@ -40,8 +40,8 @@ class TerraformProviderDocsLocal < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.17/terraform-provider-docs-local_ linux_arm64.tar.gz"
-        sha256 "e07db2527da7c497a1aff1578d1ac76d1b87b0e0d3ffa51925358ddbaabbb6f5"
+        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.18/terraform-provider-docs-local_linux_arm64.tar.gz"
+        sha256 "dce5b5122bf971d155b7e16b82eaf66eafa876d3e62842d18efe093243370165"
 
         def install
           bin.install "terraform-provider-docs-local-darwin-#{Hardware::CPU.arch}" => "terraform-provider-docs-local"

@@ -5,21 +5,21 @@
 class TerraformProviderDocsLocal < Formula
   desc "A tool for managing and browsing local copies of Terraform provider documentation"
   homepage "https://github.com/jreslock/terraform-provider-docs-local"
-  version "0.0.19"
+  version "0.0.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.19/terraform-provider-docs-local_darwin_x86_64.tar.gz"
-      sha256 "98c09dc05fd83b642b8daf40a50d93124549baf87b19caf2297889e1ce02c4a7"
+      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.20/terraform-provider-docs-local_darwin_x86_64.tar.gz"
+      sha256 "40d19ca13665050458af7bc2949747b730bbd3039b08c02c08491ada9e148e6b"
 
       def install
         bin.install "terraform-provider-docs-local"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.19/terraform-provider-docs-local_darwin_arm64.tar.gz"
-      sha256 "f55984c116c1c17679029f6080f552623a6e8008e8b5e7306afc40a209c55b5d"
+      url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.20/terraform-provider-docs-local_darwin_arm64.tar.gz"
+      sha256 "5f7aac0d8ef567cf99f617ac0253f92cb493a5b2861f255bb386a506b4ca53ad"
 
       def install
         bin.install "terraform-provider-docs-local"
@@ -30,8 +30,8 @@ class TerraformProviderDocsLocal < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.19/terraform-provider-docs-local_linux_x86_64.tar.gz"
-        sha256 "1f21168c55dd7f5da5228cb9f1dde3dc4db615d4e2df9bfdd1fe478a22544655"
+        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.20/terraform-provider-docs-local_linux_x86_64.tar.gz"
+        sha256 "6b4981d52e8064271503b5fab66bec8764215536f1e73762c7a55e8661f75fd0"
 
         def install
           bin.install "terraform-provider-docs-local"
@@ -40,8 +40,8 @@ class TerraformProviderDocsLocal < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.19/terraform-provider-docs-local_linux_arm64.tar.gz"
-        sha256 "dbd10b7f79df961e26aee50cf8ba4927eeb0c5e9b997122521b5334a436f9f31"
+        url "https://github.com/jreslock/terraform-provider-docs-local/releases/download/v0.0.20/terraform-provider-docs-local_linux_arm64.tar.gz"
+        sha256 "fc0d7ff37f91ae6bcd6a0ebc8e3430653e0bd1b394331f965ba881f0bdbbefe8"
 
         def install
           bin.install "terraform-provider-docs-local"
